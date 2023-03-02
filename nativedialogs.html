@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+<script>
+
+    window.addEventListener("DOMContentLoaded",alertFunction);
+    function alertFunction(){
+        let btn = document.getElementById("alert");
+        btn.addEventListener("click", (call) =>{
+            alert("passed");
+        });
+    }
+
+    window.addEventListener("DOMContentLoaded",confrimFunction);
+    function confrimFunction() {
+        let btn = document.getElementById("comfirm");
+        btn.addEventListener('click', (conf) => {
+
+        let text;
+        if (confirm("Do you confrim this?") == true) {
+            text = "The value returned by the confirm method is : True";
+        }  
+        else {
+            text = "The value returned by the confirm method is : False";
+        }
+        const confrimResult = document.createElement("result");
+        const confirmText = document.createTextNode(text);
+        confrimResult.appendChild(confirmText);
+        document.getElementById("P1").innerHTML = text;
+        })
+        
+    }
+
+    window.addEventListener("DOMContentLoaded",promptFunction);
+    function promptFunction(){
+        let btn = document.getElementById("prompt");
+        btn.addEventListener('click', (show)=> {
+        let question = prompt("what is your name");
+        if (question != null) {
+            document.getElementById("P1").innerHTML = "Prompt Result: "+ question;
+        }
+        else{
+            document.getElementById("P1").innerHTML = "User didn't enter anything"
+        }
+        })
+    }
+
+    window.addEventListener("DOMContentLoaded",safeFunction);
+    function safeFunction(){
+        let btn = document.getElementById("safe");
+        btn.addEventListener('click', (show)=> {
+            let question = prompt("what is your name");
+        let clean = DOMPurify.sanitize(question);
+        if (question != null) {
+            document.getElementById("P1").innerHTML = "Prompt Result: "+ clean;
+        }
+        else{
+            document.getElementById("P1").innerHTML = "User didn't enter anything";
+        }
+        })
+    }
+
+</script>
+<body>
+    
+    <h1>Simple Dialogs</h1>
+    <button id = "alert" >Alert</button>
+    <button id = "comfirm" >Confrim</button>
+    <button id = "prompt" > Prompt</button>
+    <button id = "safe" >Safer Prompt</button>
+    <hr>
+    <div id = "P1"></div>
+    
+
+</body>
+</html>

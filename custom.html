@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+<script src = "customdialog.js" type = "module"></script>
+<body>
+    <h1>Costume Dialogs</h1>
+    <button id = "alert" >Alert</button>
+    <button id = "comfirm" >Confrim</button>
+    <button id = "safe" > Prompt</button>
+    <hr>
+    <div id = "P1"></div>
+
+    <dialog id = "alertDia">
+        alert passed<br>
+        <button id = "closeAlert">Ok</button>
+    </dialog>
+
+    <dialog id = "confrimDia">
+        Do you confrim this?<br>
+        <button id = "T">True</button>
+        <button id = "F">False</button>
+    </dialog>
+
+    <dialog id = "promptDia">
+        what is your name?<br>
+        <input type="text" id="prompt"><br><br>
+        <button id = "ok">Ok</button>
+        <button id = "cancel">cancel</button>
+
+    </dialog>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script src = "stlyedcrud.js", type = "module"></script>
+<script src = "stlyedinForm.js", type = "module"></script>
+<script src = "stlyeded.js" type = "module"></script>
+<style>
+    body{
+        background-color: bisque;
+    }
+    h1{
+        text-align: center;
+        border-radius: 20px;
+        border-style: double;
+        border-color: black;
+        border-width: 0.3cm;
+
+    }
+
+    #add{
+        background-color: DodgerBlue;
+        border: none;
+        color: white;
+        padding: 12px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        left: 60vw;
+    }
+    #add:hover {
+        background-color: RoyalBlue;
+    } 
+</style>
+<body>
+
+    <h1>Big List </h1><br>
+    <button id = "add"> add a thing</button>
+
+    <dialog id = "addForm">
+        <label>thing</label>
+        <input type="text" id="title" value = "00"><br><br>
+        <label for="lname">when to do</label>
+        <input type="text" id="year" name="lname" ><br><br>
+        <label>emergency</label>
+        <select id="rate" value="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <button id = "cancel">cancel</button>
+        <button id = "ok">ok</button>
+    </dialog>
+    <div id = "output"></div>
+
+</body>
+</html>
