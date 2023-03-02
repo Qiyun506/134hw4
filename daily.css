@@ -1,0 +1,50 @@
+body{
+    background-image: url("bg.jpg");
+    display:flex;
+    flex-direction: column;
+    
+}
+.me:hover{
+    transform: scale(1.5);
+}
+.cook:hover{
+    transform: scale(1.1);
+}
+.stone:hover{
+    transform: scale(1.1);
+}
+main{
+    text-align: center;
+    font-family: cursive;
+    display: flex;
+    justify-content: space-between !important;
+    gap: 5px
+}
+.snow{
+    flex: 1;
+    margin: 10px;
+}
+
+.cooking{
+    flex: 1;
+    margin: 10px;
+
+}
+.photo{
+    flex: 1;
+    margin: 10px;
+
+}
+
+/*pics---------------------------*/
+.me{
+    width: 87%;
+}
+.cook{
+    width: 87%;
+
+}
+.stone{
+    width: 87%;
+}
+/*pics---------------------------*/

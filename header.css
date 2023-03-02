@@ -1,0 +1,38 @@
+.navlink {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: rgb(237 237 237);
+    text-decoration: none;
+    list-style-type:none;
+
+}
+  
+.navlink{
+    padding: 0.5rem;
+    transition: all 0.5s ease-out;
+    font-size: 185%;
+    flex-grow: ;
+}
+
+.navlink:hover,
+.navlink:focus{
+    background-color: #fff;
+    color: #333;
+}
+
+nav {
+    
+    display: flex;
+    justify-content: space-between !important;
+    background-color: #333;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+footer{
+    text-align: center;
+    font-size: small;
+    font-family: monospace;
+}
