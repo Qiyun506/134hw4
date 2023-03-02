@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./plan.css">
-
+    <script src="plan.js"></script>
+    <script src="pForm.js"></script>
+    <script src="pED.js"></script>
     <title>plan</title>
 </head>
 <body>
@@ -36,36 +38,21 @@
     
 
         <section class = "goal">
-            <h2>Three recent Goals</h2>
-           <ul>
-              <li>get good grade in coming midterms</li>
-              <li>start the GRE prepering</li>
-              <li>sleep earlier</li>
-          </ul>
-          <h4>to have a good sleep I start counting sheeps</h4>
-          <ol>
-             <li>white sheep</li>
-             <li>black sheep</li>
-             <li>brwon sheep</li>
-         </ol>
-         <span>
-                .<br>
-            . <br>
-            . <br>
+            <h1>Big List </h1><br>
+    <button id = "add"> add a thing</button>
 
-            </span>
-         <ol start = "34">
-                <li>white sheep</li>
-                <li>black sheep</li>
-                <li>brwon sheep</li>
-            </ol>
-            <span>
-                .<br>
-            . <br>
-            . <br>
-            </span>
-    
-
+    <dialog id = "addForm">
+        <label>Thing</label>
+        <input type="text" id="thing" value = "00"><br><br>
+        <label for="lname">when to do</label>
+        <input type="text" id="time" name="lname" ><br><br>
+        <label for="lname">Description</label>
+        <input type="text" id="dis" name="lname" ><br><br>
+        <br><br>
+        <button id = "cancel">cancel</button>
+        <button id = "ok">ok</button>
+    </dialog>
+    <div id = "output"></div>
         </section>
     </main>
     <footer>
@@ -75,3 +62,6 @@
       </footer>
 </body>
 </html>
+
+
+    
